@@ -1,0 +1,8 @@
+Pock: https://github.com/pigigaldi/Pock (For the Touchbar config)
+
+Spotmenu: https://kmikiy.github.io/SpotMenu/
+
+Magnet for Window Management: https://apps.apple.com/de/app/magnet/id441258766?mt=12 (this gets in the way of traktor and daslight stuff, beware!)
+
+iTerm2: https://www.iterm2.com/
+ZSH Theme: https://github.com/Powerlevel9k/powerlevel9k
