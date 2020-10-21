@@ -1,3 +1,5 @@
+Homebrew: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 Pock: https://github.com/pigigaldi/Pock (For the Touchbar config)
 
 Spotmenu: https://kmikiy.github.io/SpotMenu/
@@ -5,4 +7,12 @@ Spotmenu: https://kmikiy.github.io/SpotMenu/
 Magnet for Window Management: https://apps.apple.com/de/app/magnet/id441258766?mt=12 (this gets in the way of traktor and daslight stuff, beware!)
 
 iTerm2: https://www.iterm2.com/
-ZSH Theme: https://github.com/Powerlevel9k/powerlevel9k
+ZSH Theme: https://github.com/romkatv/powerlevel10k
+
+Lighshot (screenshots): https://app.prntscr.com/en/index.html
+
+vscode: https://code.visualstudio.com/
+
+# Install Minimum stuff
+brew install wget curl zsh zsh-autosuggetions zsh-syntax-highlighting zsh-completions go kubernetes-cli sshpass terraform awscli vault watch wget nmap sshpass
+brew cask install iterm2 visual-studio-code spotmenu pock font-meslo-for-powerline font-powerline-symbols
