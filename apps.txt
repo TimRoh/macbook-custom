@@ -14,5 +14,5 @@ Lighshot (screenshots): https://app.prntscr.com/en/index.html
 vscode: https://code.visualstudio.com/
 
 # Install Minimum stuff
-brew install wget curl zsh zsh-autosuggetions zsh-syntax-highlighting zsh-completions go kubernetes-cli sshpass terraform awscli vault watch wget nmap sshpass
-brew cask install iterm2 visual-studio-code spotmenu pock font-meslo-for-powerline font-powerline-symbols
+brew install wget curl zsh zsh-autosuggetions zsh-syntax-highlighting zsh-completions go kubernetes-cli sshpass terraform awscli vault watch wget nmap sshpass git ungit
+brew cask install iterm2 visual-studio-code spotmenu pock font-meslo-for-powerline font-powerline-symbols spotify google-chrome microsoft-teams slack
