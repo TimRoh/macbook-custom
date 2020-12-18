@@ -1,0 +1,32 @@
+---
+- name: Install homebrew taps
+  homebrew_tap:
+    name: {{ item }}
+    state: latest
+    with_items: {{ homebrew_taps }}
+
+- name: Install homebrew casks
+  homebrew_cask:
+    name: {{ item }}
+    state: latest
+    with_items: {{ homebrew_casks }}
+
+- name: Install homebrew packages
+  homebrew:
+    name: {{ item }}
+    state: latest
+    with_items: {{ homebrew_packages }}
+
+- name: Install VS Code Extensions
+  command: code --install-extension {{ item }}
+  with_items: {{ vscode_extensions }}
+
+- name: Prepare ZSH RC
+  copy:
+    src: ../.zshrc
+    dest: ~/.zshrc
+
+- name: Prepare Iterm2 Profile
+  copy: 
+    src: ../iterm2profile.txt
+    dest: ~/Library/Application Support/iTerm2/DynamicProfiles/itermprofiles.json
