@@ -1,26 +1,17 @@
 ---
 homebrew_taps: 
-  - homebrew/bundle
-  - homebrew/cask
-  - homebrew/cask-fonts
+#  - homebrew/bundle
+#  - homebrew/cask
+#  - homebrew/cask-fonts
   - homebrew/core
 
 homebrew_casks:
-  - font-meslo-for-powerline
-  - font-powerline-symbols
   - iterm2
   - macpass
-  - multipass
-  - powershell
-  - spotmenu
-  - xquartz
   - visual-studio-code 
   - pock 
   - spotify 
-  - google-chrome 
-  - microsoft-teams 
   - slack
-  - vagrant
 
 homebrew_packages:
   - wget 
@@ -30,11 +21,9 @@ homebrew_packages:
   - zsh-syntax-highlighting 
   - zsh-completions 
   - go 
-  - kubernetes-cli 
-  - sshpass 
+  - kubernetes-cli  
   - terraform 
-  - awscli 
-  - vault 
+  - terraform-docs
   - watch 
   - wget 
   - nmap 
