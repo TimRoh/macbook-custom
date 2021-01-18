@@ -1,4 +1,7 @@
 ---
 - hosts: localhost
-  roles: 
+  vars_files:
+    - homebrew.yml
+  roles:
+   - geerlingguy.homebrew
    - bootstrap-macos

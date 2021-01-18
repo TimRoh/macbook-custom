@@ -1,0 +1,30 @@
+homebrew_installed_packages:
+  - wget 
+  - curl 
+  - zsh 
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting 
+  - zsh-completions 
+  - go 
+  - terraform@0.13 
+  - terraform-docs
+  - watch 
+  - wget 
+  - nmap 
+  - git 
+  - ungit
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: ~/Applications
+homebrew_cask_apps:
+  - iterm2
+  - macpass
+  - visual-studio-code 
+  - pock 
+  - spotify 
+  - slack
+  - google-cloud-sdk
+  - docker

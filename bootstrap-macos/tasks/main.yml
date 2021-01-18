@@ -1,32 +1,19 @@
 ---
-- name: Install homebrew taps
-  homebrew_tap:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ homebrew_taps }}"
-
-- name: Install homebrew casks
-  homebrew:
-    name: "{{ item }}"
-    state: present
-    path: ~/Applications
-    install_options: cask
-  with_items: "{{ homebrew_casks }}"
-
-- name: Install homebrew packages
-  homebrew:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ homebrew_packages }}"
-
 - name: Install VS Code Extensions
   command: code --install-extension "{{ item }}"
   with_items: "{{ vscode_extensions }}"
 
-# To DO
+- name: generate SSH key for user "{{ ansible.user }}"
+  openssh_keypair:
+    path: "~/.ssh/id_rsa"
+    type: rsa
+    size: 4096
+    state: present
+    regenerate: never
+    register: ssh_key
 
-# ssh-add -K for the SSH Key adds it to the Keychain permanently
-# zshrc back in place
-# powerlevel10k install
-# iterm profile
-# Lightshot Screenshot
+- name: Print SSH Key
+  debug: var=ssh_key.filename
+
+- name: Print guide for SSh Key
+  debug: Add SSH Key to MacOS Keyring with "ssh-add -K ~/.ssh/id_rsa"

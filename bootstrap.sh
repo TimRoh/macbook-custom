@@ -1,9 +1,11 @@
-install_homebrew () {
-  which brew 1>&/dev/null
-  if [ ! "$?" -eq 0 ] ; then
-    echo "Homebrew is not installed. Trying to install."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  else
-    echo "Homebrew is already installed."
-  fi
-}
+#! /bin/bash
+
+# Installing Pip and Ansible
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py --user
+python -m pip install --user ansible
+# Installing XCode as Dependency for Homebrew
+xcode-select --install
+echo "check System Preferences -> Update for xcode"
+# Execute Ansible Playbook
+ansible-playbook site.yml 
