@@ -13,6 +13,9 @@ homebrew_installed_packages:
   - nmap 
   - git 
   - ungit
+  - tflint
+  - coreutils
+  - pre-commit
 
 homebrew_taps:
   - homebrew/core
