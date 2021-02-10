@@ -5,7 +5,6 @@ vscode_extensions:
   - golang.go
   - googlecloudtools.cloudcode
   - hashicorp.terraform
-  - ms-azuretools.vscode-docker
   - MS-CEINTL.vscode-language-pack-de
   - ms-kubernetes-tools.vscode-kubernetes-tools
   - ms-python.python
@@ -14,3 +13,4 @@ vscode_extensions:
   - vscoss.vscode-ansible
   - wholroyd.jinja
   - yzhang.markdown-all-in-one
+  - gitlab.gitlab-workflow

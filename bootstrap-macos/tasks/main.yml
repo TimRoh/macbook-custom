@@ -15,5 +15,5 @@
 - name: Print SSH Key
   debug: var=ssh_key.filename
 
-- name: Print guide for SSh Key
+- name: Print guide for SSH Key
   debug: Add SSH Key to MacOS Keyring with "ssh-add -K ~/.ssh/id_rsa"
